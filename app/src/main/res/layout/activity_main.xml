@@ -25,7 +25,7 @@
         android:background="#82d6c6"
         android:contentDescription="@android:string/ok"
         tools:ignore="HardcodedText"
-        android:onClick="goToSearch (MainActivity)" />
+        android:onClick="goToSearch" />
 
     <Button
         android:text="History"
