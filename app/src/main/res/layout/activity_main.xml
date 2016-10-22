@@ -21,11 +21,11 @@
         android:elevation="19dp"
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
-        android:onClick="goToSearch (MainActivity)"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:background="#82d6c6"
         android:contentDescription="@android:string/ok"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        android:onClick="goToSearch (MainActivity)" />
 
     <Button
         android:text="History"
