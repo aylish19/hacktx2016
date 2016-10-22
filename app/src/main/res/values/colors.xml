@@ -3,4 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="primary_material_dark_1">#564f3c</color>
+    <color name="background_material_dark_1">#564f3c</color>
+    <color name="satusbar">#148776</color>
+    <color name="darkerBrown">#49402c</color>
 </resources>

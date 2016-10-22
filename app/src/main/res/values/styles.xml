@@ -8,4 +8,9 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="adtheme" parent="android:Theme.DeviceDefault.Light.NoActionBar.TranslucentDecor" >
+        <item name="android:colorBackground">@color/primary_material_dark_1</item>
+        <item name="android:textColorPrimary">@android:color/background_light</item>
+    </style>
+
 </resources>
