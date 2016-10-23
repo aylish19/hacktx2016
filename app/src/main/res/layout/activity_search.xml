@@ -35,6 +35,7 @@
         android:selectAllOnFocus="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:text="Enter phrase"
-        tools:ignore="HardcodedText" />
+        tools:ignore="HardcodedText"
+        tools:background="#ffffffff" />
 
 </RelativeLayout>
