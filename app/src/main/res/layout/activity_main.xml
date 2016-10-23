@@ -60,12 +60,11 @@
         android:layout_height="wrap_content"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
-        android:src="@drawable/logo"
-        android:layout_marginBottom="19dp"
-        android:layout_alignBottom="@+id/textView"
-        android:layout_alignParentEnd="true"
-        android:contentDescription="@drawable/logo"
-        app:srcCompat="@drawable/logo" />
+        android:src="@drawable/smol"
+        app:srcCompat="@drawable/smol"
+        android:layout_marginBottom="9dp"
+        android:layout_above="@+id/textView"
+        android:layout_alignParentStart="true" />
 
 
 </RelativeLayout>
