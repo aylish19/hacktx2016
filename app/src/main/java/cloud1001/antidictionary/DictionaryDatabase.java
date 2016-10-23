@@ -7,8 +7,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.text.TextUtils;
 import android.util.Log;
 
-import org.w3c.dom.Text;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
@@ -108,42 +106,14 @@ public class DictionaryDatabase {
             ContentValues initialValues = new ContentValues();
             initialValues.put(COL_WORD, word);
             initialValues.put(COL_DEFINITION, definition);
-            String keyWords = getKeyWords(definition);
-            initialValues.put(COL_KEY_WORDS, keyWords);
+            String[] keyWords = DictionaryUtils.getKeyWords(definition);
+            String keyWordsText = DictionaryUtils.keyWordsToString(keyWords);
+            initialValues.put(COL_KEY_WORDS, keyWordsText);
             initialValues.put(COL_SYNONYMS, synonyms);
 
             return mDatabase.insert(FTS_VIRTUAL_TABLE, null, initialValues);
         }
 
-        public String getKeyWords (String definition) {
-            String[] words = TextUtils.split(definition, " ");
-            StringBuilder keyWords = new StringBuilder();
-
-            for(int i = 0; i < words.length; i++) {
-                String currentWord = cleanUpWord(words[i]);
-                boolean isKey = isKeyWord(currentWord);
-                if(isKey) {
-                    keyWords.append(", " + currentWord);
-                }
-            }
-
-            keyWords.deleteCharAt(0);
-            return keyWords.toString();
-        }
-
-        public String cleanUpWord(String word) {
-            word = word.replace(",", "");
-            word = word.replace(";", "");
-            return word.toLowerCase();
-        }
-
-        public boolean isKeyWord (String currentWord) {
-            int index = Arrays.binarySearch(NON_KEY_WORDS, currentWord);
-            if(index == -1) {
-                return true;
-            }
-            return false;
-        }
 
     }
 
