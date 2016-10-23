@@ -12,7 +12,7 @@
     tools:context="cloud1001.antidictionary.Search">
 
     <TextView
-        android:text="Enter in the phrase of the word you are looking for"
+        android:text="Enter a phrase describing the word you are looking for"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"

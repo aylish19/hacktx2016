@@ -11,7 +11,7 @@ public class WordFinder {
     private int[] dictScores;
 
     public WordFinder(String description) {
-        keyWords = DictionaryUtils.getKeyWords(description); 
+        keyWords = DictionaryUtils.getKeyWords(description);
     }
 
     private void scoreWords() {
