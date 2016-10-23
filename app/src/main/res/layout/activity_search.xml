@@ -34,7 +34,7 @@
         style="@android:style/Widget.DeviceDefault.EditText"
         android:selectAllOnFocus="true"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:text="Enter phrase"
+        android:hint="Enter phrase"
         tools:ignore="HardcodedText"
         tools:background="#ffffffff" />
 
